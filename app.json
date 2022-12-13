@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c94a306d-d1d5-4ddf-b34f-1c021f3614a1"
+      }
+    },
+    "owner": "luvor"
   }
 }
