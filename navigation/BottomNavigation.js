@@ -44,8 +44,8 @@ export default function BottomNavigation() {
         name="Details"
         component={DetailsScreen}
         options={{
-          tabBarLabel: 'Updates',
-          tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name="bell" color={color} size={size} />,
+          tabBarLabel: 'Info',
+          tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name="information" color={color} size={size} />,
         }}
       />
     </Tab.Navigator>

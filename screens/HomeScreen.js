@@ -5,10 +5,19 @@ import { BarCodeScanner } from 'expo-barcode-scanner'
 import { RButton } from '../components'
 
 import CommonStyles from '../utils/CommonStyles'
+import { useDispatch } from 'react-redux'
+import { setTableID } from '../store/slices/mainSlice'
 
 export default function HomeScreen() {
   const [hasPermission, setHasPermission] = useState(null)
   const [scanned, setScanned] = useState(false)
+
+  const dispatch = useDispatch()
+
+  const handleSetTableID = (tableID) => {
+    console.log('handleSearchQuery', tableID)
+    dispatch(setTableID(tableID))
+  }
 
   useEffect(() => {
     const getBarCodeScannerPermissions = async () => {
@@ -21,6 +30,7 @@ export default function HomeScreen() {
 
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true)
+    handleSetTableID(data)
     alert(`Bar code with type ${type} and data ${data} has been scanned!`)
   }
 
