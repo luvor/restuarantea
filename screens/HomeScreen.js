@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 import { Text, View, StyleSheet } from 'react-native'
 import { BarCodeScanner } from 'expo-barcode-scanner'
 
 import { RButton } from '../components'
 
 import CommonStyles from '../utils/CommonStyles'
-import { useDispatch } from 'react-redux'
 import { setTableID } from '../store/slices/mainSlice'
 
 export default function HomeScreen() {
@@ -31,7 +31,7 @@ export default function HomeScreen() {
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true)
     handleSetTableID(data)
-    alert(`Bar code with type ${type} and data ${data} has been scanned!`)
+    alert(`Type ${type}\nData:${data}`)
   }
 
   if (hasPermission === null) {

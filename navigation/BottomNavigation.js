@@ -4,6 +4,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 import HomeScreen from '../screens/HomeScreen'
 import DetailsScreen from '../screens/DetailsScreen'
+import MenuScreen from '../screens/MenuScreen'
 
 import CStyles from '../utils/CommonStyles'
 
@@ -32,6 +33,15 @@ export default function BottomNavigation() {
       }}
     >
       <Tab.Screen
+        name="Инструкция по QR"
+        component={DetailsScreen}
+        options={{
+          tabBarLabel: 'Инструкция',
+          tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name="information" color={color} size={size} />,
+        }}
+      />
+
+      <Tab.Screen
         name="Home"
         component={HomeScreen}
         options={{
@@ -40,12 +50,13 @@ export default function BottomNavigation() {
           tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name="qrcode-scan" color={color} size={size} />,
         }}
       />
+
       <Tab.Screen
-        name="Details"
-        component={DetailsScreen}
+        name="Меню"
+        component={MenuScreen}
         options={{
-          tabBarLabel: 'Info',
-          tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name="information" color={color} size={size} />,
+          tabBarLabel: 'Меню',
+          tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name="menu" color={color} size={size} />,
         }}
       />
     </Tab.Navigator>

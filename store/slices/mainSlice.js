@@ -1,13 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit'
+
+import food from '../../data/food.json'
 import tables from '../../data/tables'
-import menu from '../../data/menu'
 
 const mainSlice = createSlice({
   name: 'main',
   initialState: {
     tables: tables,
     tableID: null,
-    menu: menu,
+    menu: null,
     search: {
       searchQuery: '',
       searchResults: [],
@@ -16,8 +17,26 @@ const mainSlice = createSlice({
       searchResultsPerPage: 0,
     },
     favorites: [],
+    order: [],
+    orderSum: 0,
   },
   reducers: {
+    fetchMenu(state) {
+      state.menu = food
+    },
+
+    addToOrder(state, action) {
+      state.orderSum += action.payload.price
+      state.order.push(action.payload)
+    },
+    removeFromOrder(state, action) {
+      state.orderSum -= action.payload.price
+      state.order = state.order.filter((item) => item.title !== action.payload.title)
+    },
+    clearOrder(state) {
+      state.order = []
+    },
+
     setSearchQuery(state, action) {
       state.search.searchQuery = action.payload
     },
@@ -50,6 +69,20 @@ const mainSlice = createSlice({
   },
 })
 
-export const { setSearchQuery, setSearchResults, setSearchResultsCount, setSearchResultsPage, setSearchResultsPerPage, setTableID, setFavorites, pushFavorite, removeFavorite } = mainSlice.actions
+export const {
+  setSearchQuery,
+  setSearchResults,
+  setSearchResultsCount,
+  setSearchResultsPage,
+  setSearchResultsPerPage,
+  setTableID,
+  setFavorites,
+  pushFavorite,
+  removeFavorite,
+  fetchMenu,
+  addToOrder,
+  removeFromOrder,
+  clearOrder,
+} = mainSlice.actions
 
 export default mainSlice.reducer
