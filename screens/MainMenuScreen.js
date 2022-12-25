@@ -23,6 +23,9 @@ export default function MainMenuScreen({ navigation }) {
   const handlePresentModalPress = () => {
     bottomSheetModalRef.current.present()
   }
+  const handleDismissModalPress = () => {
+    bottomSheetModalRef.current.dismiss()
+  }
 
   React.useEffect(() => {
     dispatch(fetchMenu())
@@ -66,7 +69,7 @@ export default function MainMenuScreen({ navigation }) {
               containerStyle={{ backgroundColor: 'rgba(0.5, 0.25, 0, 0.2)' }}
             >
               <ScrollView style={styles.contentContainer}>
-                <RBottomSheet />
+                <RBottomSheet closeModal={handleDismissModalPress} />
               </ScrollView>
             </BottomSheetModal>
           </View>

@@ -18,7 +18,7 @@ export default function DetailMenuScreen({ route, navigation }) {
         <Text style={{ fontSize: 16 }}>
           <Text style={{ fontWeight: '600' }}>Описание:</Text> {item.description}
         </Text>
-        <Text style={{ fontWeight: '600', fontSize: 16, marginTop: 10 }}>Цена: {item.price}₸</Text>
+        <Text style={{ fontWeight: '600', fontSize: 16, marginTop: 10 }}>Цена: {item.price} ₸</Text>
         <Text style={{ fontWeight: '600', fontSize: 16 }}>Вес: {item.weight}</Text>
         <Text style={{ fontWeight: '600', fontSize: 16 }}>Калории: {item.calories}</Text>
         <Text style={{ fontWeight: '600', fontSize: 16 }}>Белки: {item.proteins}</Text>

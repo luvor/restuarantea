@@ -35,6 +35,7 @@ const mainSlice = createSlice({
     },
     clearOrder(state) {
       state.order = []
+      state.orderSum = 0
     },
 
     setSearchQuery(state, action) {
