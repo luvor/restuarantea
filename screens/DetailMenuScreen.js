@@ -7,6 +7,7 @@ export default function DetailMenuScreen({ route, navigation }) {
   const { item } = route.params
   const dispatch = useDispatch()
   const order = useSelector((state) => state.order)
+  const isInOrder = order.find((i) => i.title === item.title)
   const handleAddToOrder = (item) => {
     dispatch(addToOrder(item))
   }
@@ -24,18 +25,22 @@ export default function DetailMenuScreen({ route, navigation }) {
         <Text style={{ fontWeight: '600', fontSize: 16 }}>Жиры: {item.fats}</Text>
         <Text style={{ fontWeight: '600', fontSize: 16 }}>Углеводы: {item.carbohydrates}</Text>
         <TouchableOpacity
-          style={{
-            backgroundColor: '#000',
-            padding: 10,
-            borderRadius: 5,
-            marginTop: 10,
-          }}
+          style={[
+            {
+              backgroundColor: '#000',
+              padding: 10,
+              borderRadius: 5,
+              marginTop: 10,
+            },
+            !!isInOrder ? { backgroundColor: '#fff', borderColor: '#eee', borderWidth: 1 } : null,
+          ]}
           onPress={() => {
+            if (!!isInOrder) return
             handleAddToOrder(item)
             navigation.goBack()
           }}
         >
-          <Text style={{ color: '#fff', textAlign: 'center' }}>Заказать</Text>
+          <Text style={!!isInOrder ? { color: '#000' } : { color: '#fff' }}>{!!isInOrder ? 'Заказано' : 'Заказать'}</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>

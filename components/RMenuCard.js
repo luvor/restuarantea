@@ -18,6 +18,7 @@ const RMenuCard = ({ item, cb, isInOrder, nav }) => {
       <View
         onTouchEnd={(e) => {
           e.stopPropagation()
+          if (!!isInOrder) return
           cb()
         }}
       >
