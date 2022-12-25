@@ -3,114 +3,228 @@
     "title": "Средиземноморский тост",
     "description": "с яйцом пашот, копченой индейкой, шпинатом, красным луком, гуакамоле на чиабатте",
     "photo": "https://vokrugsveta.ua/wp-content/uploads/2017/02/toastshutterstock_453459415.jpg",
-    "price": 2800
+    "price": 2800,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Оладьи с цуккини",
     "description": "с соусом дзадзики на основе греческого йогурта",
     "photo": "https://cdn-tipmymenus-com.fra1.digitaloceanspaces.com/files/daa7a7ff-cdfe-4da2-9f9c-f48dfb03b889-medium.jpg",
-    "price": 2200
+    "price": 2200,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Шакшука",
     "description": "глазунья в соусе из свежих томатов, болгарского перца, кинзы и сыра. Подается с хрустящей чиабаттой",
     "photo": "http://vkus-eda-dostavka.ru/static/images/7d633f356c5ea95ae5b28b96458241f9-600x450.jpeg",
-    "price": 2600
+    "price": 2600,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Классический омлет с грибами и сыром",
     "description": "Подаётся с миксом салата и хрустящим тостом",
     "photo": "https://static.1000.menu/img/content-v2/ff/39/26799/omlet-s-gribami-i-syrom-na-skovorode-na-zavtrak_1637821358_17_max.jpg",
-    "price": 2200
+    "price": 2200,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Фирменный деревенский завтрак",
     "description": "Глазунья, сосиски, картофельные дольки, корнишоны и шампиньоны",
     "photo": "https://lh6.googleusercontent.com/CsHmj3KVBkfAJ0NyLl7C6VOrcv8oUC2sX7kdAqX3Q08uyshplf7T3EGoFNouFPCjlV_AEVmnhwd6Y9qnyZxfcXhJUG7tLHgm5mOnjS7OGyGT5jTQ_EjsUzkrRRFfS3SQrdQDemHojS1NzuxsCjaSXZy3o9YEi1028CyTe-YcOZ7hK4P9UZr4el4w2A",
-    "price": 2800
+    "price": 2800,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Английский завтрак",
     "description": "Глазунья, копченая говядина, сосиски, фасоль в томатном соусе, запеченные томаты и жареный шпинат",
     "photo": "https://aif-s3.aif.ru/images/015/297/615bebe1aa5a3bf1416f806ebaf0cb34.jpg",
-    "price": 2800
+    "price": 2800,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Картофельный хешбраун",
     "description": "Картофельный хешбраун с сёмгой, яйцом–пашот и свежим голландским соусом",
     "photo": "https://img.freepik.com/premium-photo/potato-hash-brown-with-fried-eggs-and-meat-pastrami-for-breakfast-branch_255424-3558.jpg?w=2000",
-    "price": 2800
+    "price": 2800,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Рисовая каша на молоке со сливочным маслом и ягодным компоте",
     "description": "",
     "photo": "https://foodmood.ru/upload/iblock/6b3/6b300bf9ce77fd4d9fcfec9753960e17.jpg",
-    "price": 1300
+    "price": 1300,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Овсяная каша на молоке с гранолой и ягодным компоте",
     "description": "",
     "photo": "https://imageproxy.wolt.com/venue/5d50e047644033c3c7dd3017/1c8e861bd02e1f358bef5d922684bc72",
-    "price": 1300
+    "price": 1300,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Сырники с творожным кремом и ягодным компоте",
     "description": "",
     "photo": "https://foodmood.ru/upload/iblock/22f/22f9e4ea80e107a8d28217f667e34b3c.jpg",
-    "price": 2400
+    "price": 2400,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Бельгийские вафли с мороженым",
     "description": "",
     "photo": "https://sgastronomy.ru/wp-content/uploads/2016/01/2.jpg",
-    "price": 2400
+    "price": 2400,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Бельгийские вафли с сезонными фруктами и нутеллой",
     "description": "",
     "photo": "https://bhub.com.ua/wp-content/wpmowebp/wp-content/uploads/2021/02/w3-1-1024x678.webp",
-    "price": 3100
+    "price": 3100,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Три классических блинчика со свежей сметаной и клубничным джемом",
     "description": "",
     "photo": "https://travelinsider.ru/wp-content/uploads/2020/02/Yuzhane_bliny-s-apelsinovym-kurdom-i-svezhimi-citrusami_1.jpg",
-    "price": 1300
+    "price": 1300,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Два классических блинчика с начинкой из творожного соуса, с ягодным компоте",
     "description": "",
     "photo": "https://www.afisha.ru/uploads/c/9c/c9c15a1e88784988b56a04fb5836b9db.jpeg",
-    "price": 1300
+    "price": 1300,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Яйца Бенедикт",
     "description": "семга, яйца пашот, чиабатта и свежий голландский соус",
     "photo": "https://k-stolu.com/images/stories/Vtorie_bluda/7/eggs.jpg",
-    "price": 2800
+    "price": 2800,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Бельгийские вафли с яйцом пашот, малосольной семгой и голландским соусом",
     "description": "",
     "photo": "https://i.ytimg.com/vi/SSm6egphi34/maxresdefault.jpg",
-    "price": 2800
+    "price": 2800,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Тост с авокадо",
     "description": "",
     "photo": "https://e3.edimdoma.ru/data/recipes/0012/2544/122544-ed4_wide.jpg?1628773535",
-    "price": 1800
+    "price": 1800,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Два классических блинчика с начинкой из слабосолёного лосося и творожного сыра",
     "description": "",
     "photo": "https://www.afisha.ru/uploads/d/cb/dcb820b4a41640068f61dc0eded073d0.png",
-    "price": 2200
+    "price": 2200,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   },
   {
     "title": "Два классических блинчика с начинкой из куриного филе и грибов",
     "description": "",
     "photo": "https://www.supersadovnik.ru/binfiles/images/20170113/b9c44cd3.jpg",
-    "price": 1800
+    "price": 1800,
+    "weight": "100 гр",
+    "calories": "300 ккал",
+    "proteins": "10 г",
+    "fats": "10 г",
+    "carbohydrates": "10 г",
+    "category": "Завтраки"
   }
 ]

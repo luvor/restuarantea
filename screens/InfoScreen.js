@@ -2,7 +2,7 @@ import * as React from 'react'
 import { View, Text } from 'react-native'
 import { useSelector } from 'react-redux'
 
-export default function DetailsScreen() {
+export default function InfoScreen() {
   const tableID = useSelector((state) => state.tableID)
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>

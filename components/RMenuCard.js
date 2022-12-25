@@ -3,16 +3,28 @@ import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
 
 import CommonStyles from '../utils/CommonStyles'
 
-const RMenuCard = ({ item, cb, isInOrder }) => {
+const RMenuCard = ({ item, cb, isInOrder, nav }) => {
   return (
-    <View style={styles.container}>
+    <View
+      style={styles.container}
+      onTouchEnd={() => {
+        nav.navigate('MenuDetail', { item })
+      }}
+    >
       <Image source={{ uri: item.photo }} style={styles.image} />
       <Text style={styles.heading}>{item.title}</Text>
       <Text style={styles.description}>{item.description}</Text>
       <Text style={styles.price}>{item.price} ₸</Text>
-      <TouchableOpacity disabled={!!isInOrder} style={[styles.button, !!isInOrder ? { backgroundColor: '#fff', borderColor: '#eee', borderWidth: 1 } : null]} onPress={cb}>
-        <Text style={!!isInOrder ? { color: '#000' } : { color: '#fff' }}>{!!isInOrder ? 'Заказано' : 'Заказать'}</Text>
-      </TouchableOpacity>
+      <View
+        onTouchEnd={(e) => {
+          e.stopPropagation()
+          cb()
+        }}
+      >
+        <TouchableOpacity disabled={!!isInOrder} style={[styles.button, !!isInOrder ? { backgroundColor: '#fff', borderColor: '#eee', borderWidth: 1 } : null]}>
+          <Text style={!!isInOrder ? { color: '#000' } : { color: '#fff' }}>{!!isInOrder ? 'Заказано' : 'Заказать'}</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   )
 }

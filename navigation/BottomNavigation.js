@@ -3,8 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 import HomeScreen from '../screens/HomeScreen'
-import DetailsScreen from '../screens/DetailsScreen'
 import MenuScreen from '../screens/MenuScreen'
+import InfoScreen from '../screens/InfoScreen'
 
 import CStyles from '../utils/CommonStyles'
 
@@ -34,7 +34,7 @@ export default function BottomNavigation() {
     >
       <Tab.Screen
         name="Инструкция по QR"
-        component={DetailsScreen}
+        component={InfoScreen}
         options={{
           tabBarLabel: 'Инструкция',
           tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name="information" color={color} size={size} />,
@@ -56,6 +56,7 @@ export default function BottomNavigation() {
         component={MenuScreen}
         options={{
           tabBarLabel: 'Меню',
+          headerShown: false,
           tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name="menu" color={color} size={size} />,
         }}
       />
